@@ -33,12 +33,20 @@ export default function Login() {
             </div>
             {/* button submit container */}
             <div className="w-full">
-              <ButtonSubmit placeholder="Submit" />
+              {/* hover & active effect ditambahkan */}
+              <ButtonSubmit
+                placeholder="Submit"
+                className="hover:bg-[#0b52a3] active:bg-[#073b79]"
+              />
             </div>
           </div>
+
           {/* forgot button container */}
           <div className="w-full text-center">
-            <Link to={"/"} className="text-white underline roboto">
+            <Link
+              to={"/"}
+              className="text-white underline roboto hover:text-[#c8d9e8] active:text-[#0767e1]"
+            >
               Forgot password?
             </Link>
           </div>
@@ -48,7 +56,10 @@ export default function Login() {
         <div className="mt-auto flex flex-col gap-8 w-full justify-center items-center pb-12">
           {/* button create account */}
           <div className="w-full">
-            <ButtonCreateAccount placeholder="Create account" />
+            <ButtonCreateAccount
+              placeholder="Create account"
+              className="hover:bg-[#0b52a3] active:bg-[#073b79]"
+            />
           </div>
           {/* logo meta */}
           <div className="w-[70px] flex justify-center items-center">
